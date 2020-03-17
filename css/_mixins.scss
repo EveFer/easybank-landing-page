@@ -1,0 +1,15 @@
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin gradientToRight($color1, $color2) {
+    background-image: linear-gradient(to right, $color1, $color2);
+}
